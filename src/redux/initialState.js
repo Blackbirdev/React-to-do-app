@@ -14,7 +14,7 @@ const initialState = {
             id: 3,
             title: 'Games',
             icon: 'gamepad',
-        }
+        },
     ],
 
     cards: [
@@ -25,7 +25,6 @@ const initialState = {
         { id: 5, columnId: 3, title: 'The Witcher' },
         { id: 6, columnId: 3, title: 'Skyrim' }
     ]
-
 };
 
 export default initialState;

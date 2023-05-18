@@ -6,7 +6,7 @@ import TextInput from '../TextInput/TextInput';
 import { addColumn } from '../../redux/store';
 
 const ColumnForm = () => {
-const [title, setValue] = useState('');
+    const [title, setValue] = useState('');
     const [icon, setIcon] = useState('');
 
     const dispatch = useDispatch();

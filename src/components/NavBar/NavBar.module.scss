@@ -1,0 +1,41 @@
+@import '../../styles/settings.scss';
+
+.navBar {
+    background-color: darken($color-dark, 3%);
+    transform: translate(0, -30%);
+}
+
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navIcon {
+    font-size: 28px;
+    text-decoration: none;
+
+    span {
+        color: $color-light;
+        transform: translate(50%, 50%);
+    }
+}
+
+.navLinks {
+    ul {
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+
+        li {
+            margin: 10px;
+
+            a {
+                font-size: 15px;
+                font-weight: $semi-bold;
+                letter-spacing: 2px;
+                text-decoration: none;
+                color: $color-light;
+            }
+        }
+    }
+}

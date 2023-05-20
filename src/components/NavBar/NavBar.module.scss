@@ -35,6 +35,11 @@
                 letter-spacing: 2px;
                 text-decoration: none;
                 color: $color-light;
+                transition: $transition;
+            }
+
+            .linkActive {
+                color: $color-warning;
             }
         }
     }

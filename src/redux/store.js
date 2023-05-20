@@ -8,6 +8,10 @@ export const getFilteredCards = ({ cards, searchString }, columnId) => cards.fil
 
 export const getAllColumns = state => state.columns;
 
+export const getListById = ({ lists }, listId) => lists.find(list => listId === list.id);
+
+export const getColumnsByList = ({ columns }, listId) => columns.filter(column => column.listId === listId);
+
 //action creators
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 export const addCard = payload => ({ type: 'ADD_CARD', payload });

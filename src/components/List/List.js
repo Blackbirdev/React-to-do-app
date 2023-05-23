@@ -11,7 +11,6 @@ const List = () => {
   const columns = useSelector(state => getColumnsByList(state, listId));
   const listData = useSelector(state => getListById(state, listId))
 
-
   return (
     <div className={styles.list}>
       <header className={styles.header}>

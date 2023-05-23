@@ -4,7 +4,7 @@ import Home from './components/Home/Home.js';
 import About from './components/About/About.js';
 import Favorite from './components/Favorite/Favorite.js';
 import NotFound from './components/NotFound/NotFound.js';
-import List from './components/Lists/Lists.js';
+import List from './components/List/List';
 import { Routes, Route } from 'react-router-dom';
 
 
@@ -15,10 +15,10 @@ const App = () => {
             <Container>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/list/:listId" element={<List />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/favorite" element={<Favorite />} />
                     <Route path="*" element={<NotFound />} />
+                    <Route path="/list/:listId" element={<List />} />
                 </Routes>
             </Container>
         </main>

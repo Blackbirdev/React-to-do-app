@@ -1,0 +1,18 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(40% - 8px);
+    background: $color-light;
+    margin: 0 $base-size $base-size 0;
+    padding: ($base-size * 1.5);
+    border-radius: $radius;
+    color: $color-dark;
+}
+
+.favoriteCards {
+    padding: math.div($base-size, 2) 0;
+}

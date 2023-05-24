@@ -7,13 +7,6 @@ import { getFavoriteCard } from '../../redux/cardsRedux';
 const Favorite = () => {
 
     const favoriteCards = useSelector(getFavoriteCard);
-    if (favoriteCards.lenght === 0) {
-        return (
-            <div>
-                <PageTitle>Ups! No favorite cards yet</PageTitle>
-            </div>
-        );
-    }
 
     return (
         <div>
